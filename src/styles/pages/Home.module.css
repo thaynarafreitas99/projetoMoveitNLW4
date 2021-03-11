@@ -1,0 +1,20 @@
+.container{
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container section{
+    /* uma linha */
+    flex: 1; 
+    display: grid;
+    /* separado em 2 colunas com tamanho igual 50% */
+    grid-template-columns: 1fr 1fr;
+    /* separamento entre as 2 colunas 6.25 * 16 = resulta em px */
+    gap: 6.25rem;
+     /* todo conteudo do grid alinhado ao centro verticalmente */
+    align-content: center;
+}
